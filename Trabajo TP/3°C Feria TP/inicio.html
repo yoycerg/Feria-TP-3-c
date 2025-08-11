@@ -5,31 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EmocionaMente</title>
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/inicio.css">
 </head>
 
 <body>
+    <!-- Botón menú lateral -->
     <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
-
-
-    <div class="side-menu" id="sideMenu" onclick="toggleMenu()">
-        <a href="#" onclick="navigateTo('inicio')">Inicio</a>
-        <a href="#" onclick="navigateTo('libros')">Libros</a>
-        <a href="#" onclick="navigateTo('musica')">Música</a>
-        <a href="#" onclick="navigateTo('recursos')">Recursos</a>
-        <a href="#" onclick="navigateTo('contacto')">Contacto</a>
-
-        </nav>
-
+    <!-- Menú lateral -->
+    <div class="side-menu" id="sideMenu">
+        <a href="#" onclick="navigateTo()">Inicio</a>
+        <a href="libros.html" onclick="navigateTo()">Libros</a>
+        <a href="musica.html" onclick="navigateTo()">Música</a>
+        <a href="mapa.html" onclick="navigateTo()">Mapa</a>
+        <a href="configuracion.html" onclick="navigateTo()">Configuración</a>
     </div>
 
+    <!-- Barra principal fija -->
     <nav>
-        <h1>EmocionaMente</h1>
+        <div class="nav-container">
+            <h1>EmocionaMente</h1>
+            <button class="login-btn" onclick="openModal()">Iniciar sesión</button>
+        </div>
         <p>Tu espacio para cuidar tu salud emocional y mental</p>
-        <button>Iniciar seción</button>
     </nav>
 
+
+    <!-- Contenido principal -->
     <main>
         <section class="intro-box">
             <h2>¿Qué es EmocionaMente?</h2>
@@ -71,11 +73,14 @@
         </section>
     </main>
 
+    <!-- Pie de página -->
     <footer>
         <p>&copy; 2025 EmocionaMente. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="static/js/script.js"></script>
+    <!-- JS -->
+ 
+    <script src="static/js/inicio.js"></script>
 </body>
 
 </html>

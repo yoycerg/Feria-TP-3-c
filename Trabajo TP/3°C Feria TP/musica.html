@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmocionaMente</title>
+    <link rel="stylesheet" href="static/css/musica.css">
+</head>
+
+<body>
+    <!-- Botón menú lateral -->
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <!-- Menú lateral -->
+    <div class="side-menu" id="sideMenu">
+        <a href="inicio.html" onclick="navigateTo()">Inicio</a>
+        <a href="libros.html" onclick="navigateTo()">Libros</a>
+        <a href="#" onclick="navigateTo()">Música</a>
+        <a href="mapa.html" onclick="navigateTo()">Mapa</a>
+        <a href="configuracion.html" onclick="navigateTo()">Configuración</a>
+    </div>
+
+    <!-- Barra principal fija -->
+    <nav>
+        <div class="nav-container">
+            <h1>EmocionaMente</h1>
+            <button class="login-btn" onclick="openModal()">Iniciar sesión</button>
+        </div>
+        <p>Tu espacio para cuidar tu salud emocional y mental</p>
+    </nav>
+    <div class="container">
+        <section class="music-section">
+            <h1>Música y Bienestar</h1>
+            <p>La música es una herramienta poderosa para mejorar tu salud mental. Puede ayudarte a relajarte,
+                concentrarte
+                y levantar el ánimo.</p>
+
+            <div class="row">
+                <div class="music-card">
+                    <img src="static/images/musica.jpg" alt="Imagen no disponible">
+                    <h3>Relajación</h3>
+                    <audio controls>
+                        <source src="audio/relajacion.mp3" type="audio/mpeg">
+                        Tu navegador no soporta audio.
+                    </audio>
+                </div>
+
+                <div class="music-card">
+                    <img src="static/images/musica.jpg" alt="Imagen no disponible">
+                    <h3>Concentración</h3>
+                    <audio controls>
+                        <source src="audio/concentracion.mp3" type="audio/mpeg">
+                        Tu navegador no soporta audio.
+                    </audio>
+                </div>
+
+                <div class="music-card">
+                    <img src="static/images/musica.jpg" alt="Imagen no disponible">
+                    <h3>Ánimo positivo</h3>
+                    <audio controls>
+                        <source src="audio/animo.mp3" type="audio/mpeg">
+                        Tu navegador no soporta audio.
+                    </audio>
+                </div>
+            </div>
+            <div class="row">
+                <div class="music-card">
+                    <img src="static/images/musica.jpg" alt="Imagen no disponible">
+                    <h3>Relajación</h3>
+                    <audio controls>
+                        <source src="audio/relajacion.mp3" type="audio/mpeg">
+                        Tu navegador no soporta audio.
+                    </audio>
+                </div>
+
+                <div class="music-card">
+                    <img src="static/images/musica.jpg" alt="Imagen no disponible">
+                    <h3>Concentración</h3>
+                    <audio controls>
+                        <source src="audio/concentracion.mp3" type="audio/mpeg">
+                        Tu navegador no soporta audio.
+                    </audio>
+                </div>
+
+                <div class="music-card">
+                    <img src="static/images/musica.jpg" alt="Imagen no disponible">
+                    <h3>Ánimo positivo</h3>
+                    <audio controls>
+                        <source src="audio/animo.mp3" type="audio/mpeg">
+                        Tu navegador no soporta audio.
+                    </audio>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="static/js/musica.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmocionaMente</title>
+    <link rel="stylesheet" href="static/css/configurcion.css">
+</head>
+
+<body>
+    <!-- Botón menú lateral -->
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <!-- Menú lateral -->
+    <div class="side-menu" id="sideMenu">
+        <a href="inicio.html" onclick="navigateTo()">Inicio</a>
+        <a href="libros.html" onclick="navigateTo()">Libros</a>
+        <a href="musica.html" onclick="navigateTo()">Música</a>
+        <a href="mapa.html" onclick="navigateTo()">Mapa</a>
+        <a href="#" onclick="navigateTo()">Configuración</a>
+    </div>
+
+    <!-- Barra principal fija -->
+    <nav>
+        <div class="nav-container">
+            <h1>EmocionaMente</h1>
+            <button class="login-btn" onclick="openModal()">Iniciar sesión</button>
+        </div>
+        <p>Tu espacio para cuidar tu salud emocional y mental</p>
+    </nav>
+    <section class="config-section">
+        <h1 data-lang="config-title">Configuración</h1>
+        <!-- Idioma -->
+        <div class="config-item">
+            <label for="languageSelect" data-lang="language">Idioma:</label>
+            <select id="languageSelect">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </section>
+
+
+
+    <script src="static/js/configuracion.js"></script>
+</body>
+
+</html>

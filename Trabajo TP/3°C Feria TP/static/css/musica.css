@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f8;
+    color: #333;
+}
+
+/* Botón menú lateral */
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #800020;
+    color: white;
+    border: none;
+    font-size: 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 4000;
+    /* el más alto de todos */
+}
+
+.menu-btn:hover {
+
+    background-color: #630019;
+
+}
+
+
+/* Menú lateral */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    height: 100%;
+    width: 260px;
+    background-color: #800020;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    z-index: 3000;
+    /* SUBIMOS para que esté sobre el nav */
+}
+
+.side-menu a {
+    display: block;
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.side-menu a:hover {
+    background-color: #630019;
+}
+
+/* Barra principal fija */
+nav {
+    position: sticky;
+    /* Hace que el nav se quede pegado al top */
+    top: 0;
+    background-color: #800020;
+    color: white;
+    padding: 1.5rem 1rem 1rem;
+    text-align: center;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav-container h1 {
+    margin: 0;
+}
+
+.login-btn {
+    position: absolute;
+    right: 0;
+    padding: 8px 15px;
+    background-color: #800020;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #630019;
+}
+
+
+
+
+.music-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.music-section h1 {
+    color: #800020;
+    margin-bottom: 10px;
+}
+
+.music-section p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.row {
+    margin-top: 70px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.music-card {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 250px;
+    min-width: 250px;
+}
+
+.music-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.music-card img{
+width: 300px;
+height: 200px;
+border-radius: 10px;
+}

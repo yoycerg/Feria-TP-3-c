@@ -10,31 +10,35 @@ body {
     color: #333;
 }
 
+/* Botón menú lateral */
 .menu-btn {
     position: fixed;
     top: 20px;
     left: 20px;
     width: 40px;
     height: 40px;
-    background-color: #3949ab;
+    background-color: #90b455;
     color: white;
     border: none;
     font-size: 22px;
     border-radius: 5px;
     cursor: pointer;
-    z-index: 1001;
+    z-index: 4000;
+    /* el más alto de todos */
 }
 
+/* Menú lateral */
 .side-menu {
     position: fixed;
     top: 0;
     left: -260px;
     height: 100%;
     width: 260px;
-    background-color: #3949ab;
+    background-color: #62792f;
     padding-top: 60px;
     transition: left 0.3s ease;
-    z-index: 1000;
+    z-index: 3000;
+    /* SUBIMOS para que esté sobre el nav */
 }
 
 .side-menu a {
@@ -43,32 +47,54 @@ body {
     padding: 15px 25px;
     font-size: 18px;
     text-decoration: none;
-
 }
 
 .side-menu a:hover {
-    background-color: #303f9f;
+    background-color:#5b7229;
+    color: black;
 }
 
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    display: none;
-    z-index: 999;
-}
-
+/* Barra principal fija */
 nav {
-    background-color: #5c6bc0;
+    position: sticky;
+    /* Hace que el nav se quede pegado al top */
+    top: 0;
+    background-color: #6D8834;
     color: white;
-    padding: 2rem 1rem 1rem;
+    padding: 1.5rem 1rem 1rem;
     text-align: center;
-
+    z-index: 1000;
 }
 
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav-container h1 {
+    margin: 0;
+}
+
+.login-btn {
+    position: absolute;
+    right: 0;
+    padding: 8px 15px;
+    background-color: #6D8834;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background-color:#516426;
+}
+
+/* Contenido principal */
 main {
     padding: 2rem;
     max-width: 1200px;
@@ -94,7 +120,6 @@ main {
     border-radius: 10px;
     padding: 1.5rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-
 }
 
 .box h3 {
@@ -104,20 +129,24 @@ main {
 }
 
 .box li {
-
     margin-left: 40px;
 }
 
-
 .intro-box h2 {
     text-align: center;
-
-
 }
 
+/* Pie de página */
 footer {
+
     background-color: #eeeeee;
     text-align: center;
-    padding: 1rem;
+    padding: 60px;
     margin-top: 3rem;
+}
+
+footer p {
+
+margin-top: 20px;
+
 }
