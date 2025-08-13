@@ -23,8 +23,10 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 // Lista de parques con coordenadas y descripción
 let parques = [
-    { nombre: "Parque la Bandera", coords: [-33.542904, -70.637241], desc: "El pulmón verde más grande de Santiago." },
-
+    { nombre: "Parque la Bandera", coords: [-33.542904, -70.637241], },
+    { nombre: "Parque Quita Normal", coords: [-33.441402, -70.681110], },
+    { nombre: "Cerro Santa Lucía", coords: [-33.440112, -70.644314], },
+     { nombre: "Parque Metropolitano", coords: [-33.],  },
 ];
 
 // Crear marcadores en el mapa
