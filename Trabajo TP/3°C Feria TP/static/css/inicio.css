@@ -8,7 +8,10 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background: #f4f6f8;
     color: #333;
+    background-image: url();
 }
+
+
 
 /* Botón menú lateral */
 .menu-btn {
