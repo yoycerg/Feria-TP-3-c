@@ -26,7 +26,7 @@ let parques = [
     { nombre: "Parque la Bandera", coords: [-33.542904, -70.637241], },
     { nombre: "Parque Quita Normal", coords: [-33.441402, -70.681110], },
     { nombre: "Cerro Santa Lucía", coords: [-33.440112, -70.644314], },
-     { nombre: "Parque Metropolitano", coords: [-33.],  },
+     { nombre: "Parque Metropolitano", coords: [-33.424575, -70.633018],  },
 ];
 
 // Crear marcadores en el mapa
