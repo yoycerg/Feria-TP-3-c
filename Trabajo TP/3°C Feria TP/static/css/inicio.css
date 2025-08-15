@@ -9,7 +9,7 @@ body {
     background: #f4f6f8;
     color: #333;
 
-  
+
 }
 
 
@@ -54,7 +54,7 @@ body {
 }
 
 .side-menu a:hover {
-    background-color:#5b7229;
+    background-color: #5b7229;
     color: black;
 }
 
@@ -95,7 +95,7 @@ nav {
 }
 
 .login-btn:hover {
-    background-color:#516426;
+    background-color: #516426;
 }
 
 /* Contenido principal */
@@ -151,35 +151,44 @@ footer {
 
 footer p {
 
-margin-top: 20px;
+    margin-top: 20px;
 
 }
 
 
 .contenido {
-display: flex;
-justify-content: space-between;
-margin-bottom: 30px;
-text-align: center  ;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    text-align: center;
+
 
 }
 
 .contenido img {
-width: 40px;
-height: 40px;
-align-items: center;
-margin-left: 60px;
-margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 5px;
 }
 
-.contenido button {
-border-radius: 10px;
-width: 200px;
-height: 100px;
-border: none  ;
-display: flex;
-align-items: center;
+.contenido a {
+    color: #5e5c5c;
+    text-decoration: none;
+    background-color: #e6e1e1;
+    border-radius: 10px;
+    width: 200px;
+    height: 100px;
+    border: none;
+    display: flex;
+    align-items: center;
 
 }
 
+.contenido a:hover {
+background-color: #797979;
+    transform: scale(1.09);
+    transition: all 0.3s;
 
+}

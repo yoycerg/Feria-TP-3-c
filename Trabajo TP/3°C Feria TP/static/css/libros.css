@@ -131,7 +131,8 @@ nav {
 
 .card:hover {
 transform: scale(1.1);
-background-color: #cac0c0;
+background-color: #e4e4e4;
+transition: all 0.3s;
 }
 
 
