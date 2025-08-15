@@ -13,3 +13,7 @@ function toggleMenu() {
   }
 }
 
+function irInicioSesion() {
+  window.location.href = "pages/inicio_sesion.html";
+
+}

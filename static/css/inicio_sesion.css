@@ -1,0 +1,78 @@
+/*  Reinicio de los estilos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #514fdb, #c9d6ff);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+
+}
+
+.container h2 {
+    margin-bottom: 25px;
+    color: #444;
+}
+
+.container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    font-size: 16px;
+}
+
+.container input:focus {
+    outline: none;
+    background-color: #e0e0e0;
+}
+
+.container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #55c082;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+}
+
+.container button:hover {
+    background-color: #3128b4;
+}
+
+.container .extra {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.container .extra a {
+    color: rgb(167, 167, 209);
+    text-decoration: none;
+}
+
+.container .extra a:hover {
+    text-decoration: underline;
+}
