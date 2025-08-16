@@ -8,6 +8,11 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background: #f4f6f8;
     color: #333;
+
+    background-image: url("../../images/libros.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
@@ -35,8 +40,9 @@ body {
     z-index: 4000;
     /* el más alto de todos */
 }
+
 .menu-btn:hover {
-background-color:#413e3e;
+    background-color: #413e3e;
 
 
 }
@@ -106,7 +112,7 @@ nav {
 }
 
 .login-btn:hover {
-    background-color:#413e3e;
+    background-color: #413e3e;
 }
 
 .row {
@@ -126,13 +132,13 @@ nav {
     box-shadow: 1px 2px 1px #838080;
     border-radius: 10px;
     text-align: center;
-
+    background-color: #fff;
 }
 
 .card:hover {
-transform: scale(1.1);
-background-color: #e4e4e4;
-transition: all 0.3s;
+    transform: scale(1.1);
+    background-color: #e4e4e4;
+    transition: all 0.3s;
 }
 
 
@@ -155,7 +161,7 @@ transition: all 0.3s;
 }
 
 .card button:hover {
-background-color: #1a237e;
+    background-color: #1a237e;
 
 }
 

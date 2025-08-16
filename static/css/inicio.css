@@ -8,9 +8,12 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background: #f4f6f8;
     color: #333;
-
-
+    background-image: url("../../images/inicio.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 
 
 
@@ -108,8 +111,8 @@ main {
 .intro-box {
     background-color: white;
     border-radius: 10px;
-    padding: 2rem;
-    margin-bottom: 2rem;
+    padding: 60px;
+    margin-bottom: 40px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -119,16 +122,34 @@ main {
     gap: 1.5rem;
 }
 
+.problem-box {
+    text-align: center;
+    margin-top: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 45px;
+color: #312e2e;
+}
+
+.problem-box h3 {
+margin-top: -30px;
+margin-bottom: 20px;
+    color: #6D8834;
+}
+
+
+
+
 .box {
     background-color: white;
     border-radius: 10px;
     padding: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px #585656;
 }
 
 .box h3 {
     margin-bottom: 20px;
-    color: #5c6bc0;
+    color: #6D8834;
     text-align: center;
 }
 
@@ -137,6 +158,9 @@ main {
 }
 
 .intro-box h2 {
+    margin-top: -40px;
+    margin-bottom: 20px;
+    color: #6D8834;
     text-align: center;
 }
 
@@ -145,7 +169,7 @@ footer {
 
     background-color: #eeeeee;
     text-align: center;
-    padding: 60px;
+    padding: 30px;
     margin-top: 3rem;
 }
 
@@ -187,8 +211,10 @@ footer p {
 }
 
 .contenido a:hover {
-background-color: #797979;
+    background-color: #797979;
     transform: scale(1.09);
     transition: all 0.3s;
 
 }
+
+

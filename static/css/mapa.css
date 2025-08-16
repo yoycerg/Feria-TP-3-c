@@ -8,6 +8,10 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background: #f4f6f8;
     color: #333;
+    background-image: url("../../images/mapa.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Botón menú lateral */
@@ -17,7 +21,7 @@ body {
     left: 20px;
     width: 40px;
     height: 40px;
-    background-color :#4CAF50  ;
+    background-color: #4CAF50;
     color: white;
     border: none;
     font-size: 22px;
@@ -55,7 +59,7 @@ body {
 }
 
 .side-menu a:hover {
-    background-color:#19aa1e;
+    background-color: #19aa1e;
 }
 
 /* Barra principal fija */
@@ -101,21 +105,21 @@ nav {
 .map-section {
     text-align: center;
     padding: 20px;
-    background-color: #f7f7f7;
+   
     border-radius: 10px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .map-section h1 {
-    color: #3949ab;
+    color: #19aa1e;
 }
 
 .map-section p {
-    color: #555;
+    color: #ffffff;
 }
 
 #map {
-   
+
     margin: 0 auto;
     height: 400px;
     width: 900px;
