@@ -63,19 +63,26 @@ body {
 
 /* Barra principal fija */
 nav {
+    display: flex;
     position: sticky;
     /* Hace que el nav se quede pegado al top */
     top: 0;
     background-color: #6D8834;
     color: white;
-    padding: 1.5rem 1rem 1rem;
+    padding: 25px;
     text-align: center;
     z-index: 1000;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+   
 }
 
 .nav-container {
-    display: flex;
-    justify-content: center;
+
+
+
     align-items: center;
     position: relative;
 }
@@ -83,6 +90,8 @@ nav {
 .nav-container h1 {
     margin: 0;
 }
+
+
 
 .login-btn {
     position: absolute;
@@ -100,6 +109,9 @@ nav {
 .login-btn:hover {
     background-color: #516426;
 }
+
+
+
 
 /* Contenido principal */
 main {
@@ -128,12 +140,12 @@ main {
     background-color: #fff;
     border-radius: 10px;
     padding: 45px;
-color: #312e2e;
+    color: #312e2e;
 }
 
 .problem-box h3 {
-margin-top: -30px;
-margin-bottom: 20px;
+    margin-top: -30px;
+    margin-bottom: 20px;
     color: #6D8834;
 }
 
@@ -218,3 +230,23 @@ footer p {
 }
 
 
+/* Área del usuario */
+#user-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* espacio entre foto y nombre */
+}
+
+/* Foto redonda */
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+.espacio {
+    width: 100px;
+}

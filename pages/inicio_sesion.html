@@ -12,9 +12,9 @@
 <body>
     <div class="container">
         <h2>Bienvenido 👋</h2>
-        <form>
-            <input type="email" placeholder="Correo electrónico" required>
-            <input type="password" placeholder="Contraseña" required>
+        <form onsubmit="guardarUsuario(event)">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
             <button type="submit">Iniciar Sesión</button>
         </form>
         <div class="extra">
