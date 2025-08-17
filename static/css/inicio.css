@@ -96,7 +96,7 @@ nav {
 .login-btn {
     position: absolute;
     right: 0;
-    padding: 8px 15px;
+ width: 100px;
     background-color: #6D8834;
     color: white;
     border: none;

@@ -1,12 +1,13 @@
-function guardarUsuario(e) {
-    e.preventDefault();
-    let nombre = document.getElementById("nombre").value;
+    function mostrarUsuario() {
+      let nombre = localStorage.getItem("usuario");
+      let foto = localStorage.getItem("foto");
 
-    // Guardamos el nombre en localStorage
-    localStorage.setItem("usuario", nombre);
-    localStorage.setItem("foto", "https://i.pravatar.cc/100"); // foto demo
-
-    // Redirigir al index.html
-    window.location.href = "../../index.html";
-}
+      if (nombre && foto) {
+        document.getElementById("user-area").innerHTML = `
+          <img src="${foto}" class="profile-pic" alt="Foto de perfil">
+          <span>${nombre}</span>
+       
+        `;
+      }
+    }
 
