@@ -1,4 +1,4 @@
-    function mostrarUsuario() {
+  function mostrarUsuario() {
       let nombre = localStorage.getItem("usuario");
       let foto = localStorage.getItem("foto");
 
