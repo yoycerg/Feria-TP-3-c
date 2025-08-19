@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#chat {
+
+    padding: 10px;
+    width: 400px;
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.msg {
+    margin: 5px 0;
+}
+
+.user {
+    color: blue;
+}
+
+.ia {
+    color: green;
+}
+
+#entrada {
+    width: 300px;
+    padding: 5px;
+}
+
+  

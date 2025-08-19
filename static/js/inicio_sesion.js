@@ -1,20 +1,11 @@
-  function mostrarUsuario() {
-      let nombre = localStorage.getItem("usuario");
-      let foto = localStorage.getItem("foto");
+  function guardarUsuario(e) {
+      e.preventDefault();
+      let nombre = document.getElementById("nombre").value;
 
-      if (nombre && foto) {
-        document.getElementById("user-area").innerHTML = `
-          <img src="${foto}" class="profile-pic" alt="Foto de perfil">
-          <span>${nombre}</span>
-          <button onclick="cerrarSesion()">Cerrar Sesión</button>
-        `;
-      }
+      // Guardamos el nombre en localStorage
+      localStorage.setItem("usuario", nombre);
+      localStorage.setItem("foto", "../images/foto_sin_perfil.jpg"); // foto demo
+
+      // Redirigir al index.html
+      window.location.href = "../index.html";
     }
-
-    function cerrarSesion() {
-      localStorage.removeItem("usuario");
-      localStorage.removeItem("foto");
-      location.reload();
-    }
-
-    window.onload = mostrarUsuario;

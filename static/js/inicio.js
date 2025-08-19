@@ -13,6 +13,18 @@ function toggleMenu() {
   }
 }
 
+
+function hablarIA() {
+  let visor = document.getElementById("hablarIA");
+  visor.src = "../../pages/chatIA.html"; // Ruta de tu PDF
+  visor.style.display = "block"; // Mostrar el iframe
+}
+
+
+
+
+
+
 function irInicioSesion() {
   window.location.href = "pages/inicio_sesion.html";
 
@@ -27,7 +39,7 @@ function mostrarUsuario() {
     document.getElementById("user-area").innerHTML = `
           <img src="${foto}" class="profile-pic" alt="Foto de perfil">
           <span>${nombre}</span>
-       
+          <button onclick="cerrarSesion()">Cerrar Sesión</button>
         `;
   }
 }
