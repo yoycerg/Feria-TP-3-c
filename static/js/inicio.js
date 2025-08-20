@@ -13,18 +13,6 @@ function toggleMenu() {
   }
 }
 
-
-function hablarIA() {
-  let visor = document.getElementById("hablarIA");
-  visor.src = "../../pages/chatIA.html"; // Ruta de tu PDF
-  visor.style.display = "block"; // Mostrar el iframe
-}
-
-
-
-
-
-
 function irInicioSesion() {
   window.location.href = "pages/inicio_sesion.html";
 
@@ -36,18 +24,27 @@ function mostrarUsuario() {
   let foto = localStorage.getItem("foto");
 
   if (nombre && foto) {
+
     document.getElementById("user-area").innerHTML = `
           <img src="${foto}" class="profile-pic" alt="Foto de perfil">
           <span>${nombre}</span>
           <button onclick="cerrarSesion()">Cerrar Sesión</button>
-        `;
+      
+          `;
+    window.onload = document.getElementById("caja-1").style.display = "flex";
+    window.onload = document.getElementById("informacion").style.display = "none";
   }
 }
 
+window.onload = document.getElementById("caja-1").style.display = "none";
+
 function cerrarSesion() {
+
   localStorage.removeItem("usuario");
   localStorage.removeItem("foto");
   location.reload();
 }
 
 window.onload = mostrarUsuario;
+
+

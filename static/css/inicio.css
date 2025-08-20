@@ -5,6 +5,10 @@
 }
 
 body {
+    min-height: 100vh; /* Ocupa el 100% de la ventana */
+    display: flex;
+    flex-direction: column;
+    margin: 0;
     font-family: 'Segoe UI', sans-serif;
     background: #f4f6f8;
     color: #333;
@@ -209,24 +213,18 @@ main {
 
 /* Pie de página */
 footer {
-
     background-color: #eeeeee;
     text-align: center;
-    padding: 30px;
-    margin-top: 3rem;
-}
-
-footer p {
-
-    margin-top: 20px;
 
 }
+
+
 
 
 .contenido {
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
-    margin-bottom: 30px;
+    
     text-align: center;
 
 
@@ -250,6 +248,7 @@ footer p {
     border: none;
     display: flex;
     align-items: center;
+    margin: 20px;
 
 }
 

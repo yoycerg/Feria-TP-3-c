@@ -76,3 +76,9 @@ body {
 .login-box .extra a:hover {
     text-decoration: underline;
 }
+
+/* Bóton de cerrar sesión */
+
+.cerrarSesion{
+    background-color: red;
+}
