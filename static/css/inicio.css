@@ -55,7 +55,7 @@ body {
     /* Oculto por defecto */
     width: 100%;
     height: 600px;
-   border: none;
+    border: none;
     margin-top: 20px;
 }
 
@@ -144,9 +144,11 @@ nav {
 
 /* Contenido principal */
 main {
-    padding: 2rem;
+    display: flex;
+    padding: 20px;
     max-width: 1200px;
     margin: auto;
+    flex-direction: column;
 }
 
 .intro-box {
@@ -287,4 +289,100 @@ footer p {
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #ccc;
+}
+
+/* ===================== */
+/* ESTILOS RESPONSIVOS   */
+/* ===================== */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 992px) {
+    nav {
+        grid-template-columns: 1fr auto;
+        /* Simplificamos nav */
+        padding: 15px;
+    }
+
+    .intro-box {
+        padding: 30px;
+    }
+
+    .contenido {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contenido a {
+        width: 90%;
+        height: auto;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .contenido img {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+
+    nav {
+        grid-template-columns: 1fr;
+        /* Título arriba, botones abajo */
+        text-align: center;
+        gap: 10px;
+    }
+
+    .nav-container {
+        justify-content: center;
+    }
+
+    .login-btn {
+        position: static;
+        width: 100%;
+        max-width: 200px;
+        margin: 10px auto;
+    }
+
+    .intro-box {
+        padding: 20px;
+    }
+
+    .problem-box {
+        padding: 20px;
+    }
+
+    .feature-boxes {
+        grid-template-columns: 1fr;
+        /* una caja por fila */
+    }
+
+    .contenido {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contenido a {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    footer {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    #visorPDF {
+        height: 400px;
+    }
 }
