@@ -13,6 +13,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: rgba(78, 78, 78, 0.5);
+    background-blend-mode: darken;
 }
 
 
@@ -153,12 +155,12 @@ nav {
 .card img {
     border-radius: 10px 10px 0px 0px;
     width: 200px;
-    height: 140px;
+    height: 180px;
 
 }
 
 .card button {
-    margin-top: 30px;
+
     width: 100px;
     height: 20px;
     border-radius: 10px;
@@ -177,4 +179,133 @@ h2 {
 
 
     margin-top: 20px;
+}
+
+#user-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-right: 15px;
+    font-size: 14px;
+    color: white;
+    /* puedes cambiar a negro si lo usas en fondo claro */
+    font-weight: bold;
+}
+
+/* 🔹 Foto de perfil */
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* hace que sea circular */
+    object-fit: cover;
+    /* recorta la foto sin deformarla */
+    border: 2px solid #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Botón de cerrar sesión */
+.cerrar-btn {
+    background: #e63946;
+    /* rojo elegante */
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cerrar-btn:hover {
+    background: #c1121f;
+    /* rojo más oscuro en hover */
+    transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+    .row {
+        flex-wrap: wrap;
+        /* Hace que las cards bajen si no caben */
+        justify-content: center;
+        gap: 20px;
+        /* Espacio entre cards */
+    }
+
+    .card {
+        width: 220px;
+        height: auto;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    #visorPDF {
+        width: 90%;
+        height: 500px;
+    }
+}
+
+/* Celulares (pantallas pequeñas) */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .login-btn {
+        position: static;
+        /* Se baja debajo del título */
+        margin-top: 10px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        /* Cards ocupan casi toda la pantalla */
+        max-width: 300px;
+        height: auto;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    #visorPDF {
+        width: 95%;
+        height: 400px;
+    }
+}
+
+/* Celulares muy pequeños */
+@media (max-width: 480px) {
+    nav {
+        padding: 1rem;
+    }
+
+    nav h1 {
+        font-size: 1.2rem;
+    }
+
+    .login-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .card button {
+        width: 80%;
+        height: auto;
+        padding: 6px;
+    }
 }

@@ -5,7 +5,8 @@
 }
 
 body {
-    min-height: 100vh; /* Ocupa el 100% de la ventana */
+    min-height: 100vh;
+    /* Ocupa el 100% de la ventana */
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -16,6 +17,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: rgba(27, 26, 26, 0.5);
+    background-blend-mode: darken;
 }
 
 
@@ -54,14 +57,6 @@ body {
     /* el más alto de todos */
 }
 
-#visorPDF {
-    display: none;
-    /* Oculto por defecto */
-    width: 100%;
-    height: 600px;
-    border: none;
-    margin-top: 20px;
-}
 
 /* Menú lateral */
 .side-menu {
@@ -126,21 +121,20 @@ nav {
 
 
 .login-btn {
-    position: absolute;
-    right: 0;
-    width: 100px;
-    height: 30px;
-    background-color: #6D8834;
+    background: #6d8834;
     color: white;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 8px 16px;
+    margin-left: 10px;
+    border-radius: 8px;
     font-size: 14px;
-    transition: background 0.3s;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .login-btn:hover {
     background-color: #516426;
+    transform: scale(1.05);
 }
 
 
@@ -149,8 +143,7 @@ nav {
 /* Contenido principal */
 main {
     display: flex;
-    padding: 20px;
-    max-width: 1200px;
+    padding: 30px;
     margin: auto;
     flex-direction: column;
 }
@@ -224,7 +217,7 @@ footer {
 .contenido {
     display: inline-block;
     justify-content: space-between;
-    
+
     text-align: center;
 
 
@@ -290,15 +283,37 @@ footer {
     border: 2px solid #ccc;
 }
 
-/* ===================== */
-/* ESTILOS RESPONSIVOS   */
-/* ===================== */
+.title-body {
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+}
 
-/* Tablets y pantallas medianas */
+.cerrar-btn {
+    background: #e63946;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-left: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cerrar-btn:hover {
+    background: #c1121f;
+    transform: scale(1.05);
+}
+
+
+
+/* ESTILOS RESPONSIVOS   */
+
 @media (max-width: 992px) {
     nav {
         grid-template-columns: 1fr auto;
-        /* Simplificamos nav */
+
         padding: 15px;
     }
 
@@ -325,7 +340,7 @@ footer {
     }
 }
 
-/* Celulares */
+
 @media (max-width: 600px) {
     body {
         background-size: cover;
@@ -334,7 +349,6 @@ footer {
 
     nav {
         grid-template-columns: 1fr;
-        /* Título arriba, botones abajo */
         text-align: center;
         gap: 10px;
     }
@@ -360,7 +374,7 @@ footer {
 
     .feature-boxes {
         grid-template-columns: 1fr;
-        /* una caja por fila */
+
     }
 
     .contenido {

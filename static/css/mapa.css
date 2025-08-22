@@ -8,10 +8,12 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background: #f4f6f8;
     color: #333;
-    background-image: url("../../images/mapa.jpg");
+    background-image: url("../../images/mapa-imgen.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: rgba(63, 62, 62, 0.5);
+    background-blend-mode: darken;
 }
 
 /* Botón menú lateral */
@@ -105,7 +107,7 @@ nav {
 .map-section {
     text-align: center;
     padding: 20px;
-   
+
     border-radius: 10px;
     margin-top: 10px;
 }
@@ -125,4 +127,17 @@ nav {
     width: 900px;
     border-radius: 10px;
     margin-top: 15px;
+}
+
+.listas {
+display: flex;
+margin: 0 auto;
+width: 850px;
+color: #fff;
+}
+
+.title-mapa {
+    color: #fff;
+text-align: center;
+
 }

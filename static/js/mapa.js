@@ -13,6 +13,25 @@ function toggleMenu() {
     }
 }
 
+
+window.onload = function () {
+    let nombre = localStorage.getItem("nombre");
+    let foto = localStorage.getItem("foto");
+
+    if (nombre && foto) {
+        document.getElementById("user-area").innerHTML = `
+            <img src="${foto}" class="profile-pic" alt="Foto de perfil">
+            <span>${nombre}</span>
+            <button class="logout-btn" onclick="cerrarSesion()">Cerrar Sesión</button>
+        `;
+    }
+}
+
+function cerrarSesion() {
+    localStorage.clear();
+    window.location.href = "index.html";
+}
+
 // Mapa de la granja
 let map = L.map('map').setView([-33.537704, -70.636150], 13);
 
@@ -26,8 +45,8 @@ let parques = [
     { nombre: "Parque la Bandera", coords: [-33.542904, -70.637241], },
     { nombre: "Parque Quita Normal", coords: [-33.441402, -70.681110], },
     { nombre: "Cerro Santa Lucía", coords: [-33.440112, -70.644314], },
-     { nombre: "Parque Metropolitano", coords: [-33.424575, -70.633018],  },
-      { nombre: "Parque O´Higgins", coords: [-33.462302, -70.659117],  },
+    { nombre: "Parque Metropolitano", coords: [-33.424575, -70.633018], },
+    { nombre: "Parque O´Higgins", coords: [-33.462302, -70.659117], },
 ];
 
 // Crear marcadores en el mapa
