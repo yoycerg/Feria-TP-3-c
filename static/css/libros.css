@@ -79,19 +79,30 @@ body {
 
 /* Barra principal fija */
 nav {
+    display: flex;
     position: sticky;
-    /* Hace que el nav se quede pegado al top */
     top: 0;
-    background-color: #4B4B4B;
+    background-color: #444;
     color: white;
-    padding: 1.5rem 1rem 1rem;
+    padding: 25px;
     text-align: center;
     z-index: 1000;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+
+
 }
 
 .nav-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+
     align-items: center;
     position: relative;
 }
@@ -223,6 +234,12 @@ h2 {
     transform: scale(1.05);
 }
 
+.area-inicio {
+    display: flex;
+    justify-content: right;
+
+}
+
 @media (max-width: 1024px) {
     .row {
         flex-wrap: wrap;
@@ -247,6 +264,8 @@ h2 {
         height: 500px;
     }
 }
+
+
 
 /* Celulares (pantallas pequeñas) */
 @media (max-width: 768px) {

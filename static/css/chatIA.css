@@ -1,10 +1,23 @@
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
+  background-color: #59b49d;
+}
+
+.container {
+  margin-left: 400px;
+  background-color: rgb(180, 173, 173);
+  width: 500px;
+  border-radius: 10px;
+  text-align: center;
+  height: 450px;
 }
 
 #chat {
-  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-left: 40px;
+  border: 1px solid #111111;
   padding: 10px;
   width: 400px;
   height: 300px;
@@ -17,15 +30,39 @@ body {
 }
 
 .user {
-  color: blue;
+  margin-left: 60px;
+  border-radius: 10px;
+  padding: 7px;
+  background-color: rgb(129, 146, 201);
+  color: #fff;
+  ;
 }
 
 .ia {
-  color: green;
+  margin-right: 60px;
+  border-radius: 10px;
+  padding: 7px;
+  background-color: rgb(167, 152, 89);
+  color: #fff;
 }
 
 #entrada {
   width: 300px;
-  padding: 5px;
+  padding: 10px;
+}
+
+.input-area input {
+  border-radius: 6px;
+  border: none
+}
+
+.input-area button {
+  padding: 7px;
+  width: 100px;
+  border: none;
+  background-color: rgb(57, 73, 211);
+  cursor: pointer;
+  color: #fff;
+  border-radius: 10px;
 }
 

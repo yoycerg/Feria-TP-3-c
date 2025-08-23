@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
-  <title>Mi Chat con IA</title>
+  <title>Chat con IA</title>
+   <link rel="icon" type="image/png" href="../images/logo_pestaña.png">
   <link rel="stylesheet" href="../static/css/chatIA.css">
 </head>
-<body>
-  <h1>Chat con IA</h1>
-  <div id="chat"></div>
-  <input type="text" id="entrada" placeholder="Escribe algo...">
-  <button onclick="enviar()">Enviar</button>
 
+<body>
+  <div class="container">
+    <h1>💬 ¿Como te sientes hoy?</h1>
+    <div id="chat"></div>
+    <div class="input-area">
+      <input id="entrada" type="text" placeholder="Escribe tu mensaje..." />
+      <button onclick="enviar()">Enviar</button>
+    </div>
+  </div>
   <script src="../static/js/chatIA.js"></script>
 </body>
+
 </html>

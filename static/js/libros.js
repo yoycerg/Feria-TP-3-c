@@ -63,6 +63,17 @@ window.onload = function () {
 };
     
 
+
+function elDiario() {
+window.open("../pdfs/El diario de Ana Frank - Anne Frank.pdf");
+
+
+}
+
+
+
+
+
 function elHobbit() {
 
     window.open("../pdfs/El Hobbit .pdf");
