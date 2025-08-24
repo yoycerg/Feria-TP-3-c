@@ -79,6 +79,78 @@ body {
 
 /* Bóton de cerrar sesión */
 
-.cerrarSesion{
+.cerrarSesion {
     background-color: red;
+}
+
+@media (max-width: 1024px) {
+    .login-box {
+        width: 320px;
+        padding: 35px 25px;
+    }
+
+    .login-box h2 {
+        font-size: 1.6rem;
+    }
+
+    .login-box input,
+    .login-box button {
+        font-size: 15px;
+    }
+}
+
+/* Celulares grandes (pantallas menores a 768px) */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .login-box {
+        width: 100%;
+        max-width: 350px;
+        padding: 30px 20px;
+    }
+
+    .login-box h2 {
+        font-size: 1.4rem;
+    }
+
+    .login-box input,
+    .login-box button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .login-box .extra {
+        font-size: 13px;
+    }
+}
+
+/* Celulares pequeños (pantallas menores a 480px) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .login-box {
+        width: 100%;
+        max-width: 300px;
+        padding: 25px 15px;
+        border-radius: 15px;
+    }
+
+    .login-box h2 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .login-box input,
+    .login-box button {
+        font-size: 13px;
+        padding: 9px;
+    }
+
+    .login-box .extra {
+        font-size: 12px;
+    }
 }

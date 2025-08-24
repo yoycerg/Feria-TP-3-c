@@ -368,8 +368,16 @@ footer {
         padding: 20px;
     }
 
+    .intro-box h2 {
+        margin-top: 10px;
+    }
+
     .problem-box {
         padding: 20px;
+    }
+
+    .problem-box h3 {
+        margin-top: 10px;
     }
 
     .feature-boxes {

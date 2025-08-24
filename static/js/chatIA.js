@@ -29,3 +29,9 @@ async function enviar() {
     // Mostrar respuesta de la IA
     chat.innerHTML += `<div class="msg ia"><b>Carlos:</b> ${textoIA}</div>`;
     chat.scrollTop = chat.scrollHeight;
+
+  } catch (error) {
+    chat.innerHTML += `<div class="msg ia"><b>IA:</b> ❌ Error al conectar</div>`;
+  }
+}
+
