@@ -90,6 +90,28 @@ body {
   }
 }
 
+.container-2 {
+
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container-2 button {
+  border-radius: 20px;
+  color: #fff;
+  background-color: rgb(60, 141, 155);
+  border: none;
+  padding: 10px 50px;
+  margin-top: 20px;
+}
+
+.container-2 button:hover {
+  transform: scale(1.09);
+  transition: all 0.3s;
+  background-color: rgb(45, 123, 224);
+}
+
+
 /* Celulares grandes (pantallas menores a 768px) */
 @media (max-width: 768px) {
   .container {

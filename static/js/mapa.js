@@ -71,11 +71,11 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 // Lista de parques con coordenadas y descripción
 let parques = [
-    { nombre: "Parque la Bandera", coords: [-33.542904, -70.637241], },
-    { nombre: "Parque Quita Normal", coords: [-33.441402, -70.681110], },
-    { nombre: "Cerro Santa Lucía", coords: [-33.440112, -70.644314], },
-    { nombre: "Parque Metropolitano", coords: [-33.424575, -70.633018], },
-    { nombre: "Parque O´Higgins", coords: [-33.462302, -70.659117], },
+    { nombre: "Parque la Bandera", coords: [-33.542904, -70.637241], desc: "Parque ideal para pasear y relajarte"  },
+    { nombre: "Parque Quita Normal", coords: [-33.441402, -70.681110], desc: "Museos para pasar el  tiempo y y areas verdes historicas" },
+    { nombre: "Cerro Santa Lucía", coords: [-33.440112, -70.644314], desc: "Un cerro para ver vista espectaculares y relajarte" },
+    { nombre: "Parque Metropolitano", coords: [-33.424575, -70.633018], desc:"El parque mas grande de santiago, para leer libro y escuchar musica" },
+    { nombre: "Parque O´Higgins", coords: [-33.462302, -70.659117], desc:"Sede de eventos culturales y espacios de recreación" },
 ];
 
 // Crear marcadores en el mapa
