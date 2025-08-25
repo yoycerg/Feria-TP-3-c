@@ -34,4 +34,3 @@ async function enviar() {
     chat.innerHTML += `<div class="msg ia"><b>IA:</b> ❌ Error al conectar</div>`;
   }
 }
-
