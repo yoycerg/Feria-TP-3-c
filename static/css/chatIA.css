@@ -1,109 +1,93 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
-}
-
-
 body {
   font-family: Arial, sans-serif;
-
-  background-color: rgb(69, 78, 78);
-
-
+  padding: 20px;
+  background-color: #59b49d;
 }
 
 .container {
-  display: flex;
-
-
-}
-
-.todo {
+  margin-left: 400px;
+  background-color: rgb(180, 173, 173);
+  width: 500px;
   border-radius: 10px;
-  background-color: rgb(91, 104, 104);
-  width: 100%;
-  max-width: 500px;
-  /* El contenedor no crece más de 500px */
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
+  text-align: center;
   margin: 0 auto;
+  height: 450px;
 }
 
 #chat {
-  border: 1px solid #ccc;
-  padding: 10px;
-  flex: 1;
-  overflow-y: auto;
   background-color: #fff;
   border-radius: 10px;
+  margin-left: 40px;
+  border: 1px solid #111111;
+  padding: 10px;
+  width: 400px;
+  height: 300px;
+  overflow-y: auto;
   margin-bottom: 10px;
-
-  /* 📌 Esto asegura que los mensajes estén en columna */
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  /* espacio entre mensajes */
 }
 
 .msg {
-  display: flex;
-  width: 100%;
+  margin: 5px 0;
 }
 
 .user {
-  padding: 10px;
+  margin-left: 60px;
   border-radius: 10px;
-  background-color: #6c83cc;
+  padding: 7px;
+  background-color: rgb(129, 146, 201);
   color: #fff;
-  align-self: flex-end;
-  /* 📌 Alinea los mensajes del usuario a la derecha */
-  max-width: 80%;
+  ;
 }
 
 .ia {
-  padding: 10px;
+  margin-right: 60px;
   border-radius: 10px;
-  background-color: black;
+  padding: 7px;
+  background-color: rgb(167, 152, 89);
   color: #fff;
-  align-self: flex-start;
-  /* 📌 Alinea los mensajes de la IA a la izquierda */
-  max-width: 80%;
 }
 
 #entrada {
-  flex: 1;
-  width: 100%;
-  max-width: 300px;
-  padding: 5px;
-  border-radius: 5px;
-  border: none;
+  width: 300px;
+  padding: 10px;
 }
 
-
-.input-entrada {
-
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: auto;
-  /* Mantiene la entrada abajo */
+.input-area input {
+  border-radius: 6px;
+  border: none
 }
 
-button {
-  background-color: rgb(133, 185, 133);
-  color: #fff;
+.input-area button {
+  padding: 7px;
+  width: 100px;
   border: none;
-  border-radius: 5px;
-  padding: 5px 20px;
+  background-color: rgb(57, 73, 211);
   cursor: pointer;
+  color: #fff;
+  border-radius: 10px;
 }
 
-button:hover {
-  background-color: rgb(113, 165, 113);
+
+@media (max-width: 1024px) {
+  .container {
+    width: 80%;
+    height: 450px;
+  }
+
+  #chat {
+    width: 90%;
+    height: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #entrada {
+    width: 70%;
+  }
+
+  .input-area button {
+    width: 25%;
+  }
 }
 
 .container-2 {
@@ -127,11 +111,70 @@ button:hover {
   background-color: rgb(45, 123, 224);
 }
 
-footer {
 
-  background-color: #222;
-  color: #fff;
-  margin-top: 200px;
-  padding: 20px;
-  text-align: center;
+/* Celulares grandes (pantallas menores a 768px) */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+  }
+
+  #chat {
+    width: 100%;
+    height: 250px;
+    margin: 0 auto 10px auto;
+  }
+
+  #entrada {
+    width: 65%;
+    padding: 8px;
+  }
+
+  .input-area button {
+    width: 30%;
+    padding: 8px;
+  }
+
+  .user,
+  .ia {
+    margin: 5px auto;
+    display: inline-block;
+    max-width: 80%;
+    text-align: left;
+  }
+}
+
+/* Celulares pequeños (pantallas menores a 480px) */
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    height: auto;
+  }
+
+  #chat {
+    width: 100%;
+    height: 220px;
+  }
+
+  #entrada {
+    width: 60%;
+    font-size: 14px;
+  }
+
+  .input-area button {
+    width: 35%;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .user,
+  .ia {
+    font-size: 14px;
+    padding: 6px;
+    max-width: 85%;
+  }
 }
