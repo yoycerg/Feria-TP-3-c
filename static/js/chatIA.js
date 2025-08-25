@@ -14,7 +14,7 @@ async function enviar() {
     const respuesta = await fetch("https://api.openai.com/v1/chat/completions", {
       method: "POST",
       headers: {
-        "Authorization": "Bearer  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", // ⚠️ Pon tu API Key aquí
+        "Authorization": "Bearer  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", // ⚠️ Pon tu API Key aquí
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
@@ -34,3 +34,4 @@ async function enviar() {
     chat.innerHTML += `<div class="msg ia"><b>IA:</b> ❌ Error al conectar</div>`;
   }
 }
+
