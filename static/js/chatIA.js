@@ -1,37 +1,23 @@
-async function enviar() {
-  const entrada = document.getElementById("entrada");
-  const chat = document.getElementById("chat");
-  const mensaje = entrada.value.trim();
+import fetch from "node-fetch";
+import "dotenv/config";
 
-  if (!mensaje) return;
+const API_KEY = process.env.DEEPAI_KEY;
 
-  // Mostrar mensaje del usuario
-  chat.innerHTML += `<div class="msg user"><b>Tú:</b> ${mensaje}</div>`;
-  entrada.value = "";
+async function run() {
+  const res = await fetch("https://api.deepai.org/api/text-generator", {
+    method: "POST",
+    headers: {
+      "Api-Key": API_KEY,
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+    body: new URLSearchParams({
+      text: "Escribe una historia corta sobre un dragón amistoso",
+    }),
+  });
 
-  // Llamada a la API de OpenAI
-  try {
-    const respuesta = await fetch("https://api.openai.com/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        "Authorization": "Bearer  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", // ⚠️ Pon tu API Key aquí
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        model: "gpt-4o-mini", // o "gpt-3.5-turbo"
-        messages: [{ role: "user", content: mensaje }]
-      })
-    });
-
-    const datos = await respuesta.json();
-    const textoIA = datos.choices[0].message.content;
-
-    // Mostrar respuesta de la IA
-    chat.innerHTML += `<div class="msg ia"><b>Carlos:</b> ${textoIA}</div>`;
-    chat.scrollTop = chat.scrollHeight;
-
-  } catch (error) {
-    chat.innerHTML += `<div class="msg ia"><b>IA:</b> ❌ Error al conectar</div>`;
-  }
+  const data = await res.json();
+  console.log("🔮 Respuesta de la IA:");
+  console.log(data.output);
 }
 
+run();

@@ -1,0 +1,20 @@
+{
+  "name": "feria-tp-3-c",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoycerg/Feria-TP-3-c.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yoycerg/Feria-TP-3-c/issues"
+  },
+  "homepage": "https://github.com/yoycerg/Feria-TP-3-c#readme"
+}

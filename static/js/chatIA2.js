@@ -14,7 +14,7 @@ async function enviar() {
     const respuesta = await fetch("https://api.openai.com/v1/chat/completions", {
       method: "POST",
       headers: {
-        "Authorization": "Bearer  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", // ⚠️ Pon tu API Key aquí
+        "Authorization": "Bearer  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", // ⚠️ Pon tu API Key aquí
         "Content-Type": "application/json"
       },
       body: JSON.stringify({

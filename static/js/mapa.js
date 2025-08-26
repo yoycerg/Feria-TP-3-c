@@ -76,6 +76,8 @@ let parques = [
     { nombre: "Cerro Santa Lucía", coords: [-33.440112, -70.644314], desc: "Un cerro para ver vista espectaculares y relajarte" },
     { nombre: "Parque Metropolitano", coords: [-33.424575, -70.633018], desc:"El parque mas grande de santiago, para leer libro y escuchar musica" },
     { nombre: "Parque O´Higgins", coords: [-33.462302, -70.659117], desc:"Sede de eventos culturales y espacios de recreación" },
+    { nombre: "Parque Brasil", coords: [-33.522059, -70.612377], desc:"Parque recrativo con museos y juegos recreativo" },
+     { nombre: "Parque La Castrina", coords: [-33.511639, -70.629734], desc:"Parque recrativo con museos y juegos recreativo" },
 ];
 
 // Crear marcadores en el mapa
